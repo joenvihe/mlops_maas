@@ -25,21 +25,25 @@ La lista de librerias y sus versiones lo encontraran a detalle en el archivo req
 ## DISEÑO DE ARQUITECTURA
 
 ## PASOS A REALIZAR
-- Crear el entorno de trabajo en python
+- Crear el entorno de trabajo en python: **Ejecutarlo en el aplicativo ANACONDA POWERSHELL**
 ```bash
 conda create -n envMLops python=3.7
 conda activate envMLops
 pip install -r requirements.txt
 ```
+
 - Crear la plantilla de cookiecutter
 ```bash
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
 ![cookiecutter_config](/img_readme/cookiecutter.png?raw=true "Linea de Comandos")
+
 - Ingresar a la carpeta que se creo con la plantilla de cookiecutter: el mio **.\mlops_maas**.
+
 - Crear repositorio git en la web de github.
 ![repositorio_git](/img_readme/repositoriogit.png?raw=true "repositorio git")
-- Subir tu proyecto con los comandos que se te brindan al crear la cuenta.
+
+- Subir tu proyecto con los comandos que se te brindan al crear la cuenta. **Ejecutarlo en el aplicativo Git Bash**
 ```bash
 git init
 git add .
