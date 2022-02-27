@@ -22,8 +22,20 @@ Se crearan las cuentas en los siguientes servicios:
 ## DISEÑO DE ARQUITECTURA
 
 ## PASOS A REALIZAR
-- Crear la carpeta donde se encontrara tu codigo: el mio **.\mlops_maas**
-- Crear repositorio git en la web de github y subir tu proyecto
+- Crear el entorno de trabajo en python
+```bash
+conda create -n envMLops python=3.7
+conda activate envMLops
+pip install -r requirements.txt
+```
+- Crear la plantilla de cookiecutter
+```bash
+cookiecutter https://github.com/drivendata/cookiecutter-data-science
+```
+![cookiecutter_config](.\img_readme\cookiecutter.png)
+- Ingresar a la carpeta que se creo con la plantilla de cookiecutter: el mio **.\mlops_maas**.
+- Crear repositorio git en la web de github.
+- Subir tu proyecto con los comandos que se te brindan al crear la cuenta.
 ```bash
 git init
 git add .
