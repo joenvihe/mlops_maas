@@ -1,0 +1,4 @@
+outs:
+- md5: e9c8ee733a9de5a5fb6ec8edc6454c23
+  size: 730178
+  path: BankAnalysis.csv
