@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```bash
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
-![cookiecutter_config](.\img_readme\cookiecutter.png)
+![cookiecutter_config](/img_readme/cookiecutter.png?raw=true "Linea de Comandos")
 - Ingresar a la carpeta que se creo con la plantilla de cookiecutter: el mio **.\mlops_maas**.
 - Crear repositorio git en la web de github.
 - Subir tu proyecto con los comandos que se te brindan al crear la cuenta.
