@@ -19,6 +19,9 @@ Se crearan las cuentas en los siguientes servicios:
 
 ## LIBRERIAS DE PYTHON
 
+La lista de librerias y sus versiones lo encontraran a detalle en el archivo requirements.txt
+- Cookiecutter
+
 ## DISEÑO DE ARQUITECTURA
 
 ## PASOS A REALIZAR
@@ -35,6 +38,7 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ![cookiecutter_config](/img_readme/cookiecutter.png?raw=true "Linea de Comandos")
 - Ingresar a la carpeta que se creo con la plantilla de cookiecutter: el mio **.\mlops_maas**.
 - Crear repositorio git en la web de github.
+![repositorio_git](/img_readme/repositoriogit.png?raw=true "repositorio git")
 - Subir tu proyecto con los comandos que se te brindan al crear la cuenta.
 ```bash
 git init
