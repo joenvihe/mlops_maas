@@ -68,14 +68,27 @@ git push -u origin main
 >dvc add bank.csv
 ```
 
-- Se ejecuta el notebook y se genera la data para entrenamiento, el archivo resultante es **./data/external/BankAnalysis.csv**
+- Se ejecuta el notebook **Data_Analysis_ML_bootcamp.ipynb** y se genera la data para entrenamiento, el archivo resultante es **./data/external/BankAnalysis.csv**
+
+- Se ejecuta el notebook **Feature_Engineering_and_modelling.ipynb** y se genera el modelo .pkl, el archivo resultante es **saved_rf_model.pkl**
+
 
 - Se agrega al controlador de versiones
 ```bash
 >dvc add BankAnalysis.csv
 ```
 
+- Se crea el archivo de configuracion en la raiz **params.yaml**
 
+- Se crea el archivo **./src/data/load_data.py** que carga la data de la carpeta **./data/external/** a la carpeta **./data/raw/**
+
+- Se crea el archivo **./src/data/split_data.py** que divide la data en test y train creando dos archivos dentro de la carpeta **./data/processed/**
+
+- Se crea el archivo **./src/models/train_model.py** donde se experimenta con los modelos cambiando parametros del archivo **params.yaml** y tambien el MLFLOW hace seguimiento de los performance de los modelos y los cuales se podra visualizar facilmente en el **dashboard de mlflow**
+
+- Se crea el archivo **./src/models/production_model_selection.py** donde se selecciona el modelo que ha tenido un mejor performance entre todos los modelos registrados y lo guarda como artefacto en la carpeta **./models/** 
+
+- Despues de crear los archivos en la carpeta **src**, se crea el model pipeline para generar elmodelo. DVC  sera usado para crear el pipeline. Para ello se crea el archivo **dvc.yaml** dentro de la carpeta raiz.
 
 ## AUTOR: Jorge Enrique Vicente Hernández
 
