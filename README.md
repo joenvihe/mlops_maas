@@ -90,6 +90,19 @@ git push -u origin main
 
 - Despues de crear los archivos en la carpeta **src**, se crea el model pipeline para generar elmodelo. DVC  sera usado para crear el pipeline. Para ello se crea el archivo **dvc.yaml** dentro de la carpeta raiz.
 
+- Se levanta el servidor del MLFLOW en otro CMD:
+```bash
+>mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 127.0.0.1 -p 5000
+```
+
+- Se ejecuta el pipeline dvc, puede salir un error de metric.acuraci pero se vuelve a ejecutar
+```bash
+>dvc repro
+```
+
+- Al cambiar los hiperparametros del modelo se genera una nueva version del modelo y se guarda en el **model regestry** del mlflow
+![model_regestry_mlflow](/img_readme/model_regestry_mlflow.png?raw=true "model regestry mlflow")
+
 ## AUTOR: Jorge Enrique Vicente Hernández
 
 - [@web_personal](http://joenvihe.herokuapp.com/)
