@@ -26,6 +26,7 @@ Se crearan las cuentas en los siguientes servicios:
 - Crear repositorio git en la web de github y subir tu proyecto
 ```bash
 git init
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/joenvihe/mlops_maas.git
