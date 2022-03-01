@@ -103,6 +103,8 @@ git push -u origin main
 - Al cambiar los hiperparametros del modelo se genera una nueva version del modelo y se guarda en el **model regestry** del mlflow
 ![model_regestry_mlflow](/img_readme/model_regestry_mlflow.png?raw=true "model regestry mlflow")
 
+- Se agrego el codigo para generar el **Model Monitoring**, esta se agrego en la carpeta **./src/models/model_monitor.py**, se ejecuta y crea una pagina HTML con el reporte de monitoreo, comparando la data actual, con la data que reentrenara (**./data/raw/train_new.csv**)
+
 ## AUTOR: Jorge Enrique Vicente Hernández
 
 - [@web_personal](http://joenvihe.herokuapp.com/)
